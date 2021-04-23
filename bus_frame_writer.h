@@ -1,7 +1,7 @@
 #ifndef BUS_FRAME_WRITER_H
 #define	BUS_FRAME_WRITER_H
 
-#include "ring-buffer/ring_buffer_types.h"
+#include "../ring-buffer/ring_buffer_types.h"
 #include "bus_frame_writer_status.h"
 
 extern void initialiseBusFrameWriter(void);
