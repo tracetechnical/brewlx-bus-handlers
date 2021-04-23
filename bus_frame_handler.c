@@ -287,39 +287,6 @@ void handleByteSpecial(unsigned char handleByte) {
     }
 }
 
-void bullshit(void) {
-//        if(blockPhase == BLOCK_WAIT_COMPLETE && busHandlerFlags.startCode1Received && busHandlerFlags.startCode2Received && busHandlerFlags.endCode1Received && busHandlerFlags.endCode2Received) {
-//        recount = 0;
-//        if(frameBytes == expectedFrameBytes) {
-//            *ptrApplicationListener = 1;
-//            success++;
-//            blockPhase = BLOCK_PHASE_NONE;
-//            completeReversibleWrite(ptrApplicationBuffer);
-//            busHandlerState = BUS_HANDLER_WAIT_PROCESSED; 
-//        } else {
-//            if(frameBytes > expectedFrameBytes) {
-//                bhErrorCtx = 0x04; // Too many bytes
-//                blockPhase = BLOCK_PHASE_NONE;
-//                busHandlerState = BUS_HANDLER_PROCESS_ERROR;
-//            } else {
-//                bhErrorCtx = 0x05; // Not enough bytes
-//                blockPhase = BLOCK_PHASE_NONE;
-//                busHandlerState = BUS_HANDLER_PROCESS_ERROR;
-//            }
-//        }        
-//    } else {
-//        if(expectedFrameBytes > 0 && frameBytes >= expectedFrameBytes) {
-//            if(recount > 4) {
-//                bhErrorCtx = 0x06; // Missing a marker
-//                blockPhase = BLOCK_PHASE_NONE;
-//                busHandlerState = BUS_HANDLER_PROCESS_ERROR;
-//            } else {
-//                recount++;
-//            }
-//        }
-//    }
-}
-
 void handleBlockData(unsigned char handleByte) {
     unsigned char calculatedCrc;
     unsigned char j;
